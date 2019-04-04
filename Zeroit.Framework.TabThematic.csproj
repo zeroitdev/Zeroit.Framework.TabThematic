@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{675921E5-879F-455D-B8D0-452E0435E5C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Zeroit.Framework.TabThematic</RootNamespace>
+    <AssemblyName>Zeroit.Framework.TabThematic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Zeroit.Framework.TabThematic.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Zeroit.Framework.TabThematic.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ZeroitStrongKeys.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseContainer\BaseContainer - Vertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseContainer\BaseContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseContainer\Enumeration.cs" />
+    <Compile Include="Controls\Horizontal\FireFox - Sub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\Meph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\iTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\NS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\DotnetBar - v2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\DotnetBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\BCEvo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\ButterScotch - Vertical.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Unique.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\xVisual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\TabInput\BaseContainer - Vertical.cs" />
+    <Compile Include="DialogEditor\TabInput\BaseContainer.cs" />
+    <Compile Include="DialogEditor\TabInput\BaseContainer - Vertical_Converter.cs" />
+    <Compile Include="DialogEditor\TabInput\BaseContainer - VerticalEditorUITypeEditor.cs" />
+    <Compile Include="DialogEditor\TabInput\BaseContainer_Converter.cs" />
+    <Compile Include="DialogEditor\TabInput\BaseContainerEditorUITypeEditor.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\AdvancedSystem.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Aresio.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\BCEvo.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\ButterScotch.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\CarbonFibre.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Crystal.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\FireFox - Sub.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\FlatUI.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\iTab.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Login.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\MetroDisk.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Reactor.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Simpla.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\Unique.cs" />
+    <Compile Include="DialogEditor\TabInput\Horizontal\VTheme.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\ButterScotch - Vertical.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\Chrome.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\DotnetBar - v2.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\DotnetBar.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\EightBall.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\Empire.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\Facebook.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\FireFox - Main.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\Meph.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\NS.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\Redemption.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\SLC.cs" />
+    <Compile Include="DialogEditor\TabInput\Vertical\xVisual.cs" />
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\SetInitialSubmitValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\AddUserControlToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\TabThematicHorizontalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\TabThematicHorizontalDialog.Designer.cs">
+      <DependentUpon>TabThematicHorizontalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\VUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\VUserControl.Designer.cs">
+      <DependentUpon>VUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\UniqueUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\UniqueUserControl.Designer.cs">
+      <DependentUpon>UniqueUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\SimplaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\SimplaUserControl.Designer.cs">
+      <DependentUpon>SimplaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ReactorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ReactorUserControl.Designer.cs">
+      <DependentUpon>ReactorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\MetroDiskUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\MetroDiskUserControl.Designer.cs">
+      <DependentUpon>MetroDiskUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\LoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\LoginUserControl.Designer.cs">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\iTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\iTabUserControl.Designer.cs">
+      <DependentUpon>iTabUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FlatUIUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FlatUIUserControl.Designer.cs">
+      <DependentUpon>FlatUIUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FireFoxUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FireFoxUserControl.Designer.cs">
+      <DependentUpon>FireFoxUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CrystalUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CrystalUserControl.Designer.cs">
+      <DependentUpon>CrystalUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CarbonFibreUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CarbonFibreUserControl.Designer.cs">
+      <DependentUpon>CarbonFibreUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ButterScotchUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ButterScotchUserControl.Designer.cs">
+      <DependentUpon>ButterScotchUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\BCEvoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\BCEvoUserControl.Designer.cs">
+      <DependentUpon>BCEvoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AresioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AresioUserControl.Designer.cs">
+      <DependentUpon>AresioUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AdvancedSystemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AdvancedSystemUserControl.Designer.cs">
+      <DependentUpon>AdvancedSystemUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\AddUserControlToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\SetInitialSubmitValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\TabThematicVerticalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\TabThematicVerticalDialog.Designer.cs">
+      <DependentUpon>TabThematicVerticalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\xVisualUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\xVisualUserControl.Designer.cs">
+      <DependentUpon>xVisualUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\SLCUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\SLCUserControl.Designer.cs">
+      <DependentUpon>SLCUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\RedemptionUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\RedemptionUserControl.Designer.cs">
+      <DependentUpon>RedemptionUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\NSUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\NSUserControl.Designer.cs">
+      <DependentUpon>NSUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\MephUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\MephUserControl.Designer.cs">
+      <DependentUpon>MephUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FireFoxMainUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FireFoxMainUserControl.Designer.cs">
+      <DependentUpon>FireFoxMainUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FacebookUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FacebookUserControl.Designer.cs">
+      <DependentUpon>FacebookUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EmpireUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EmpireUserControl.Designer.cs">
+      <DependentUpon>EmpireUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EightBallUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EightBallUserControl.Designer.cs">
+      <DependentUpon>EightBallUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarUserControl.Designer.cs">
+      <DependentUpon>DotnetBarUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarv2UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarv2UserControl.Designer.cs">
+      <DependentUpon>DotnetBarv2UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ChromeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ChromeUserControl.Designer.cs">
+      <DependentUpon>ChromeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ButterScotchUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ButterScotchUserControl.Designer.cs">
+      <DependentUpon>ButterScotchUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeManagers\HatchStyleComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeManagers\Spicylips Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeManagers\Themes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\AdvancedSystem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Aresio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\ButterScotch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\CarbonFibre.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\Chrome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Crystal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\EightBall.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\Empire.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\Facebook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\FireFox - Main.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\FlatUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Login.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\MetroDisk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Reactor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\Redemption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\Simpla.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Vertical\SLC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Horizontal\VTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeManagers\Utils.cs" />
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\TabThematicHorizontalDialog.resx">
+      <DependentUpon>TabThematicHorizontalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AdvancedSystemUserControl.resx">
+      <DependentUpon>AdvancedSystemUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\VUserControl.resx">
+      <DependentUpon>VUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\UniqueUserControl.resx">
+      <DependentUpon>UniqueUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\SimplaUserControl.resx">
+      <DependentUpon>SimplaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ReactorUserControl.resx">
+      <DependentUpon>ReactorUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\MetroDiskUserControl.resx">
+      <DependentUpon>MetroDiskUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\LoginUserControl.resx">
+      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\iTabUserControl.resx">
+      <DependentUpon>iTabUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FlatUIUserControl.resx">
+      <DependentUpon>FlatUIUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\FireFoxUserControl.resx">
+      <DependentUpon>FireFoxUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CrystalUserControl.resx">
+      <DependentUpon>CrystalUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\CarbonFibreUserControl.resx">
+      <DependentUpon>CarbonFibreUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\ButterScotchUserControl.resx">
+      <DependentUpon>ButterScotchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\BCEvoUserControl.resx">
+      <DependentUpon>BCEvoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\HorizontalEditorDialog\UserControls\AresioUserControl.resx">
+      <DependentUpon>AresioUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\TabThematicVerticalDialog.resx">
+      <DependentUpon>TabThematicVerticalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\xVisualUserControl.resx">
+      <DependentUpon>xVisualUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\SLCUserControl.resx">
+      <DependentUpon>SLCUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\RedemptionUserControl.resx">
+      <DependentUpon>RedemptionUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\NSUserControl.resx">
+      <DependentUpon>NSUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\MephUserControl.resx">
+      <DependentUpon>MephUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FireFoxMainUserControl.resx">
+      <DependentUpon>FireFoxMainUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\FacebookUserControl.resx">
+      <DependentUpon>FacebookUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EmpireUserControl.resx">
+      <DependentUpon>EmpireUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\EightBallUserControl.resx">
+      <DependentUpon>EightBallUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarUserControl.resx">
+      <DependentUpon>DotnetBarUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\DotnetBarv2UserControl.resx">
+      <DependentUpon>DotnetBarv2UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ChromeUserControl.resx">
+      <DependentUpon>ChromeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogEditor\_EditorDialog\VerticalEditorDialog\UserControls\ButterScotchUserControl.resx">
+      <DependentUpon>ButterScotchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Zeroit.Framework.TabThematic.nuspec" />
+    <None Include="ZeroitStrongKeys.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
